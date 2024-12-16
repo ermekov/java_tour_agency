@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Список туров</title>
+</head>
+<body>
+<h1>Список доступных туров</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Название</th>
+        <th>Описание</th>
+        <th>Цена</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="tour : ${tours}">
+        <td th:text="${tour.name}"></td>
+        <td th:text="${tour.description}"></td>
+        <td th:text="${tour.price}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
