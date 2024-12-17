@@ -1,0 +1,385 @@
+body{
+    margin: 0px;
+}
+.container{
+    width: 80%;
+}
+/*--------------- Basy ----------------*/
+.basy {
+    padding: 0 0 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.306), rgba(0, 0, 0, 0.562)), url('/images/banner.jpg');
+
+    background-size: cover;
+}
+
+.menu > li > a:hover {
+    transition: 0.4s linear;
+}
+
+.logo {
+    font-family: 'Oleo Script', cursive;
+    font-family: 'Yatra One';
+    font-size: 35px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.logo > a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Элементтер арасындағы арақашықтықты теңестіру */
+    align-items: center; /* Вертикальды орталау */
+    padding: 10px 50px; /* Барлық элементтердің айналасында аздаған бос орын */
+}
+
+.container .menu ul {
+    display: flex;
+    justify-content: space-between; /* Мәзір элементтерін арақашықтықты теңестіру */
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container .menu ul li {
+    margin: 0 20px; /* Элементтер арасындағы арақашықтық */
+}
+
+.container .menu ul li a {
+    transition: color 0.3s linear;
+    color: white;
+    text-decoration: none;
+}
+
+.container .menu ul li a:hover {
+    color: hwb(47 0% 0% / 0.854);
+}
+
+.alem{
+    margin: 170px 0;
+    display: flex; /* Flexbox қосу */
+    flex-direction: column; /* Элементтерді тік бағытта орналастыру */
+    justify-content: center; /* Тік бағытта ортасына қою */
+    align-items: center; /* Көлденең бағытта ортасына қою */
+    text-align: center; /* Мәтін ортасына қойылады */
+}
+
+.alem>h1{
+    font-size: 50px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Oleo Script', cursive;
+    font-family: 'Yatra One', cursive;
+}
+.alem > h1 > span{
+    font-weight: bold;
+    font-size: 80px;
+    color: hwb(47 0% 0% / 0.854);
+}
+.alem>pre{
+    width: 70%;
+    margin: 20px;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Oleo Script', cursive;
+    font-size: 20px;
+
+}
+.alem>span>a{
+    color: white;
+    border: 2px solid hwb(47 0% 0% / 0.854);
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Oleo Script', cursive;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.365);
+    transition: background-color 0.3s linear;
+    transition: color 0.4s linear;
+}
+.alem>span>a:hover{
+    background-color: rgba(0, 0, 0, 0.276);
+    color:hwb(47 0% 0% / 0.854)
+}
+.menu{
+    width: 100%;
+    margin-left: 220px;
+}
+.menu> ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+
+}
+.menu > ul > li>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Rubik', sans-serif;
+}
+/*-----------------info--------------*/
+.eky{
+    display: flex; /* Flexbox қосу */
+    justify-content: center; /* Элементтерді көлденең бағытта ортасы */
+    text-align: center; /* Мәтін ортасына қою */
+}
+.container2{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.container2>.about>h1{
+    font-family: 'EB Garamond', serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lilita One', cursive;
+    font-size:60px;
+    color:rgb(49, 49, 49);
+    text-align: center;
+}
+.container2>.about2{
+    width: 85%;
+    font-size: 18px;
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lilita One', cursive;
+    color: rgb(65, 65, 65);
+    text-align: center;
+}
+.ush{
+    margin-top: 70px;
+    width: 90%;
+    margin: 0 auto;
+}
+.foto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.foto>div{
+    width: 30%;
+    color:rgb(100, 100, 100);
+    font-family: 'EB Garamond', serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Oleo Script', cursive;
+    font-size: 20px;
+    text-align: center;
+
+}
+.foto>div>img{
+    width: 100%;
+    height: 450px;
+    object-fit:contain;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+/*------------Turlar------------*/
+.tort{
+    height: 200px;
+    background: repeating-linear-gradient(45deg, #ffe9b7, #ffe9b7 4px, #ffffff 4px, #ffffff 8px);
+}
+.turlar>h1{
+    text-align: center;
+    padding: 65px 0 0 0;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lilita One', cursive;
+    color: rgb(95, 95, 95);
+    font-size: 40px;
+}
+.turlar>h3{
+    color: #848484;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+/*------------------elder----------------*/
+
+.bes {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.elder {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.elder div {
+    width: 22%;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 22px;
+    background-color: #fff;
+}
+
+.elder img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.elder p {
+    margin-bottom: 10px;
+}
+
+.more-info {
+    background-color: #fb8500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.more-info:hover {
+    background-color: #d45d00;
+}
+/*--------------------men--------------*/
+.alty {
+    background: linear-gradient(rgba(0, 0, 0, 0.306), rgba(0, 0, 0, 0.306)), url("/images/tau.jpg");
+    background-size: cover;
+    display: flex; /* Flexbox қосу */
+    flex-direction: column; /* Элементтерді вертикальды орналастыру */
+    justify-content: center; /* Вертикальды ортасына қою */
+    align-items: center; /* Горизонтальды ортасына қою */
+    height: 100vh; /* Экранның биіктігін толтыру */
+}
+
+.men > h1 {
+    font-size: 35px;
+    text-align: center;
+    padding: 25px 0 10px;
+    color: #ffffff;
+}
+
+.portret > img {
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    margin: 0 0; /* Жоғары және төменгі жағынан арақашықтық қосу */
+}
+
+.menzhaily {
+    display: flex; /* Flexbox қосу */
+    flex-direction: column; /* Элементтерді вертикальды орналастыру */
+    justify-content: center; /* Элементтерді тік бағытта орталау */
+    align-items: center; /* Элементтерді көлденең бағытта орталау */
+    text-align: center; /* Мәтін ортасына қойылады */
+    height: 100vh; /* Экран биіктігіне тең ету */
+}
+
+.menzhaily .text {
+    margin-bottom: 0px; /* Мәтіндер арасында арақашықтық қосу */
+    padding: 30px 50px;
+    border: 2px rgba(255, 255, 255, 0.208);
+    width: 65%;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.208);
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+.menzhaily .texteky {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    width: 65%;
+}
+
+
+.menzhaily > .kub {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid rgba(255, 255, 255, 0.208);
+    margin-top: 0px;
+}
+
+/*--------------------Address----------------*/
+
+
+.testimonial-container {
+    background-color: #f0f0f0; /* Сұр фон */
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 100px auto;
+}
+
+.testimonial-container blockquote {
+    font-size: 24px;
+    color: #333;
+    font-weight: 400;
+    margin: 20px 0;
+    position: relative;
+}
+
+.testimonial-container blockquote::before {
+    content: '“';
+    font-size: 50px;
+    color: #fb8500;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+.testimonial-container blockquote::after {
+    content: '”';
+    font-size: 50px;
+    color: #fb8500;
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+}
+
+.testimonial-container p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.testimonial-container .author {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+.testimonial-container .author span {
+    font-weight: 300;
+    color: #888;
+}
+
+.testimonial-container .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.testimonial-container .navigation i {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}

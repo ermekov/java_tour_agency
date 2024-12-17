@@ -1,0 +1,82 @@
+/* Общие стили для body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/images/fon_login.png'); /* Установка фона */
+    background-size: cover; /* Растягиваем фон на весь экран */
+    background-position: center; /* Центрируем фон */
+    background-attachment: fixed; /* Фон будет фиксированным при прокрутке */
+}
+
+/* Стили для контейнера формы */
+form {
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для формы */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Стили для заголовка */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white; /* Белый цвет текста */
+    position: absolute;
+    top: 20px; /* Расположим заголовок в верхней части страницы */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Сделаем текст сверху, если есть другие элементы */
+}
+
+/* Стили для label */
+label {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Стили для input полей */
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Стили для кнопки */
+button {
+    padding: 10px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6a11cb;
+}
+
+/* Для responsive дизайна (адаптивность на мобильных устройствах) */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+        padding: 20px;
+    }
+}
